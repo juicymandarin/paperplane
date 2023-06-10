@@ -1,0 +1,23 @@
+to abspiral :hin
+repeat :hin [
+make "len 0.1
+repeat :hin [
+setpencolor random 255
+f1 
+rt 1 
+poi
+]
+penup
+home
+pendown
+]
+end
+
+to f1
+repeat 180 [ fd :len rt 1 ]
+end
+
+to poi
+make "len len + 0.1
+end
+
