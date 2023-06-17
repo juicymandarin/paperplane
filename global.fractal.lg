@@ -1,0 +1,9 @@
+to fractal :dep :len :ang
+if :dep = 0 [ stop ]
+repeat :ang [
+fd :len
+rt 360 / :ang
+fractal :dep - 1 :len * 0.4  :ang
+]
+end
+
